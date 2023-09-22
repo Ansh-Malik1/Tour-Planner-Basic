@@ -1,0 +1,128 @@
+/* write your css here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width:100vw;
+    min-height: 100vhs;
+    padding: 3rem;
+    overflow-x: hidden;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    border: 5px dashed rgb(1, 17, 160);
+    width: 100%;
+    border-radius: 10px;
+    margin: 0  auto 3rem auto;
+}
+
+.card{
+    width:30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid gray; */
+    padding: 0.5rem;
+    gap:1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px rgb(184, 184, 184);
+    height: max-content;
+}
+
+.image{
+    width: 95%;
+    align-self: center;
+    border-radius: 20px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.btn{
+    align-self: center;
+    cursor: pointer;
+    width:90%;
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem ;
+    background-color: bisque; 
+    border: 1px solid rgb(255, 94, 94);
+    font-weight:bolder
+}
+
+.btn:hover{
+    background-color: rgb(255, 94, 94);
+    color:white
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+    font-size: larger;
+}
+
+.toursContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: space-evenly;
+}
+
+.read{
+    cursor: pointer;
+}
+
+.price{
+    color:rgb(57, 158, 57)
+}
+.name{
+    color:rgb(232, 149, 25)
+}
+
+.description{
+    opacity: 0.9;
+    font-weight: lighter;
+    color: grey;
+}
+
+.read{
+    color:rgb(114, 114, 201);
+    font-weight: bolder;
+}
+.refresh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:3rem
+}
+.refreshBtn{
+    cursor: pointer;
+    width:10%;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem ;
+    background-color: rgb(207, 77, 77);
+    color:white 
+}
+@media screen and (max-width:900px) {
+    .heading{
+        width:90%
+    }
+    .wrapper{
+        padding: 0.5rem 0;
+        width: 100vw;
+    }
+    .toursContainer{
+        width: 100%;
+    }
+    .card{
+        width: 80%;
+    }
+    .refreshBtn{
+        width: 80%;
+    }
+}
